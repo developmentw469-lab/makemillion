@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kodeline – Web Development Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress"></div>
+<header class="nav">
+  <a href="#home" class="logo"><span>&lt;/&gt;</span> Kodeline</a>
+  <nav id="menu">
+    <a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#contact" class="btn small">Start a project</a>
+  </nav>
+  <button id="theme" aria-label="Toggle theme">◐</button>
+  <button id="burger" aria-label="Menu">☰</button>
+</header>
+
+<section id="home" class="hero wrap">
+  <div class="hero-text">
+    <h1>We build websites that <span id="typed"></span><i class="caret"></i></h1>
+    <p>Kodeline is a small team of designers and developers. We ship fast, clean websites, web apps and online stores for growing businesses.</p>
+    <div class="row"><a href="#contact" class="btn">Get a free quote</a><a href="#work" class="btn ghost">See our work</a></div>
+  </div>
+  <div class="editor">
+    <div class="bar"><b></b><b></b><b></b><span>index.html</span></div>
+    <pre id="code"></pre>
+    <div class="preview" id="preview">
+      <div class="p-nav"></div>
+      <h4 class="p-item">Your brand</h4>
+      <p class="p-item">Fast. Clean. Built to sell.</p>
+      <button class="p-item">Get started</button>
+      <div class="p-cards p-item"><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</section>
+
+<section class="stats wrap">
+  <div><b data-count="120">0</b><span>Projects delivered</span></div>
+  <div><b data-count="45">0</b><span>Happy clients</span></div>
+  <div><b data-count="7">0</b><span>Years of experience</span></div>
+  <div><b data-count="98">0</b><span>% on-time delivery</span></div>
+</section>
+
+<section id="services" class="wrap">
+  <h2>What we do</h2>
+  <div class="grid">
+    <article><h3>Business websites</h3><p>Fast, responsive sites that explain what you do and bring in enquiries.</p></article>
+    <article><h3>Online stores</h3><p>Shopify and custom stores with secure checkout and easy product management.</p></article>
+    <article><h3>Web apps</h3><p>Dashboards, booking systems and portals built around how your team works.</p></article>
+    <article><h3>UI/UX design</h3><p>Clear layouts and flows, tested on real people before we write code.</p></article>
+    <article><h3>SEO and speed</h3><p>Pages that load in under two seconds and are ready to rank on Google.</p></article>
+    <article><h3>Care plans</h3><p>Updates, backups and fixes every month so your site stays healthy.</p></article>
+  </div>
+</section>
+
+<section id="work" class="wrap">
+  <h2>Selected work</h2>
+  <div class="filters"><button class="active" data-f="all">All</button><button data-f="website">Websites</button><button data-f="store">Stores</button><button data-f="app">Web apps</button></div>
+  <div class="grid work">
+    <article data-c="website"><div class="thumb t1"><img src="images/fk-builders.jpg" alt="Fk Builders" loading="lazy" onerror="this.remove()"></div><h3>Fk Builders</h3><p>Construction company website</p></article>
+    <article data-c="store"><div class="thumb t2"><img src="images/urban-threads.jpg" alt="Urban Threads" loading="lazy" onerror="this.remove()"></div><h3>Urban Threads</h3><p>Clothing store with 400+ products</p></article>
+    <article data-c="app"><div class="thumb t3"><img src="images/trim-salon.jpg" alt="Trim Salon" loading="lazy" onerror="this.remove()"></div><h3>Trim Salon</h3><p>Online booking system</p></article>
+    <article data-c="website"><div class="thumb t4"><img src="images/zinger-express.jpg" alt="Zinger Express" loading="lazy" onerror="this.remove()"></div><h3>Zinger Express</h3><p>Fast food brand site</p></article>
+    <article data-c="app"><div class="thumb t5"><img src="images/fleettrack.jpg" alt="FleetTrack" loading="lazy" onerror="this.remove()"></div><h3>FleetTrack</h3><p>Vehicle tracking dashboard</p></article>
+    <article data-c="store"><div class="thumb t6"><img src="images/green-basket.jpg" alt="Green Basket" loading="lazy" onerror="this.remove()"></div><h3>Green Basket</h3><p>Grocery delivery store</p></article>
+  </div>
+</section>
+
+<section id="process" class="wrap">
+  <h2>How a project runs</h2>
+  <ol class="steps">
+    <li><b>1</b><div><h3>Discover</h3><p>We learn your goals, customers and budget in one call.</p></div></li>
+    <li><b>2</b><div><h3>Design</h3><p>You approve the look on screen before any code is written.</p></div></li>
+    <li><b>3</b><div><h3>Build</h3><p>We develop in weekly steps and you review each one.</p></div></li>
+    <li><b>4</b><div><h3>Launch</h3><p>We test, publish, and stay with you after go-live.</p></div></li>
+  </ol>
+</section>
+
+<section id="pricing" class="wrap">
+  <h2>Pricing</h2>
+  <div class="switch"><span>Pay once</span><button id="bill" aria-label="Switch plan type"></button><span>Monthly care</span></div>
+  <div class="grid price">
+    <article><h3>Starter</h3><div class="amt"><b data-once="$499" data-month="$29">$499</b><small class="u">one time</small></div><ul><li>Up to 5 pages</li><li>Mobile friendly</li><li>Contact form</li></ul><a href="#contact" class="btn ghost">Choose Starter</a></article>
+    <article class="pop"><h3>Business</h3><div class="amt"><b data-once="$1,199" data-month="$79">$1,199</b><small class="u">one time</small></div><ul><li>Up to 12 pages</li><li>Animations and CMS</li><li>SEO setup</li></ul><a href="#contact" class="btn">Choose Business</a></article>
+    <article><h3>Custom</h3><div class="amt"><b data-once="$2,999+" data-month="$199">$2,999+</b><small class="u">one time</small></div><ul><li>Web app or store</li><li>Admin panel</li><li>Priority support</li></ul><a href="#contact" class="btn ghost">Choose Custom</a></article>
+  </div>
+</section>
+
+<section class="wrap" id="reviews">
+  <h2>What clients say</h2>
+  <div class="slider">
+    <button id="prev" aria-label="Previous">‹</button>
+    <div class="quote" id="quote"></div>
+    <button id="next" aria-label="Next">›</button>
+  </div>
+  <div class="dots" id="dots"></div>
+</section>
+
+<section id="faq" class="wrap narrow">
+  <h2>Questions</h2>
+  <div class="faq">
+    <div class="q"><button>How long does a website take?</button><p>Most business sites take 2 to 4 weeks. Stores and apps take 6 to 10 weeks.</p></div>
+    <div class="q"><button>Do you help after launch?</button><p>Yes. Every project includes 30 days of free fixes, and care plans are optional after that.</p></div>
+    <div class="q"><button>Can I edit the site myself?</button><p>Yes. We add a simple admin area so you can change text, images and products.</p></div>
+    <div class="q"><button>How do payments work?</button><p>50% to start, 50% on launch. No hidden costs.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="wrap narrow">
+  <h2>Tell us about your project</h2>
+  <form id="form" novalidate>
+    <label>Name<input name="name" type="text"><em></em></label>
+    <label>Email<input name="email" type="email"><em></em></label>
+    <label>Project type<select name="type"><option>Business website</option><option>Online store</option><option>Web app</option><option>Other</option></select></label>
+    <label>Message<textarea name="msg" rows="4"></textarea><em></em></label>
+    <button class="btn" type="submit">Send message</button>
+    <p id="ok" hidden>Message sent. We will reply within 24 hours.</p>
+  </form>
+</section>
+
+<footer><div class="wrap"><a href="#home" class="logo"><span>&lt;/&gt;</span> Kodeline</a><p>© <span id="yr"></span> Kodeline. All rights reserved.</p></div></footer>
+<button id="top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
